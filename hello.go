@@ -10,8 +10,8 @@ type MainController struct {
 
 func (this *MainController) Get() {
 	this.Ctx.WriteString("hello world")
-	this.Ctx.WriteString("appname" + beego.AppConfig.String("appname")+
-		"\nhttpport" + beego.AppConfig.String("httpport")+
+	this.Ctx.WriteString("appname" + beego.AppConfig.String("appname") +
+		"\nhttpport" + beego.AppConfig.String("httpport") +
 		"\nrunmode" + beego.AppConfig.String("runmode"))
 }
 
